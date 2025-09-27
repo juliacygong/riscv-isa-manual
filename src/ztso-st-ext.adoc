@@ -13,10 +13,10 @@ behavior and want to expose that fact to software._
 ====
 RVTSO makes the following adjustments to RVWMO:
 
-* All load operations behave as if they have an acquire-RCpc annotation
-* All store operations behave as if they have a release-RCpc annotation.
-* All AMOs behave as if they have both acquire-RCsc and release-RCsc
-annotations.
+* [#norm:RVWMO_ld]#All load operations behave as if they have an acquire-RCpc annotation#
+* [#norm:RVWMO_sd]#All store operations behave as if they have a release-RCpc annotation.#
+* [#norm:RVWMO_AMO]#All AMOs behave as if they have both acquire-RCsc and release-RCsc
+annotations.#
 
 [NOTE]
 ====
@@ -42,6 +42,6 @@ element accesses.
 
 In spite of the fact that Ztso adds no new instructions to the ISA, code
 written assuming RVTSO will not run correctly on implementations not
-supporting Ztso. [#norm:ztso_binary_flag]#Binaries compiled to run only under Ztso should
+supporting Ztso. Binaries compiled to run only under Ztso should
 indicate as such via a flag in the binary, so that platforms which do
-not implement Ztso can simply refuse to run them.#
+not implement Ztso can simply refuse to run them.
