@@ -15,7 +15,7 @@ RVTSO makes the following adjustments to RVWMO:
 
 * [#norm:RVWMO_ld]#All load operations behave as if they have an acquire-RCpc annotation#
 * [#norm:RVWMO_sd]#All store operations behave as if they have a release-RCpc annotation.#
-* [#norm:RVWMO_AMO]#All AMOs behave as if they have both acquire-RCsc and release-RCsc
+* [#norm:RVWMO_AMOs]#All AMOs behave as if they have both acquire-RCsc and release-RCsc
 annotations.#
 
 [NOTE]
